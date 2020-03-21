@@ -1,7 +1,10 @@
 package com.lightbend.akka.sample;
 
 import akka.actor.typed.Behavior;
-import akka.actor.typed.javadsl.*;
+import akka.actor.typed.javadsl.AbstractBehavior;
+import akka.actor.typed.javadsl.ActorContext;
+import akka.actor.typed.javadsl.Behaviors;
+import akka.actor.typed.javadsl.Receive;
 
 public class GreeterBot extends AbstractBehavior<Greeter.Greeted> {
 

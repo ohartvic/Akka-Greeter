@@ -39,7 +39,7 @@ public class GreeterMain extends AbstractBehavior<GreeterMain.Start> {
         //#create-actors
         ActorRef<Greeter.Greeted> replyTo =
                 getContext().spawn(GreeterBot.create(5), command.name);
-        getContext().getLog().info("Telling greeter to greet");
+        getContext().getLog().info("Telling greeter to greet ...");
         greeter.tell(new Greeter.Greet(command.name, replyTo));
         //#create-actors
         return this;

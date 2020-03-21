@@ -1,8 +1,8 @@
 package com.lightbend.akka.sample;
 
-import akka.actor.typed.ActorSystem;
-
 import java.io.IOException;
+
+import akka.actor.typed.ActorSystem;
 public class AkkaQuickstart {
   public static void main(String[] args) {
     //#actor-system
